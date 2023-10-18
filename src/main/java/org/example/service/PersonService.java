@@ -1,15 +1,16 @@
 package org.example.service;
 
 import org.example.person.Person;
-import org.example.repository.Repository;
+import org.example.repository.PersonRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@org.springframework.stereotype.Service
-public class Service {
-    private Repository repository;
+@Service
+public class PersonService {
+    private PersonRepository repository;
 
-    public Service(Repository repository) {
+    public PersonService(PersonRepository repository) {
         this.repository = repository;
     }
 
